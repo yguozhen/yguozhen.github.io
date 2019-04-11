@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Archives: 2019/4 | Guozhen&#39;s technological blog</title>
+  <title>Guozhen&#39;s technological blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{2,7,11,15} wr">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Guozhen&#39;s technological blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/04/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/Two-Sum/index.html">
 <meta property="og:site_name" content="Guozhen&#39;s technological blog">
+<meta property="og:description" content="Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{2,7,11,15} wr">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-11T10:01:06.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Guozhen&#39;s technological blog">
+<meta name="twitter:description" content="Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{2,7,11,15} wr">
   
     <link rel="alternate" href="/atom.xml" title="Guozhen&#39;s technological blog" type="application/atom+xml">
   
@@ -60,52 +64,72 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/04/11/Two-Sum/" class="archive-article-date">
-  <time datetime="2019-04-11T09:45:48.000Z" itemprop="datePublished">Apr 11</time>
+        <section id="main"><article id="post-Two-Sum" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/11/Two-Sum/" class="article-date">
+  <time datetime="2019-04-11T09:45:48.000Z" itemprop="datePublished">2019-04-11</time>
 </a>
-      
-    </header>
+    
   </div>
-</article>
-  
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/04/09/bubble-sort/" class="archive-article-date">
-  <time datetime="2019-04-09T09:59:24.000Z" itemprop="datePublished">Apr 9</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/09/bubble-sort/">bubble sort</a>
-    </h1>
-  
+        <p>Hello, this is Guozhen Yang’s blog.<br>I will write down and share some opinion about my algorithm with you.<br>Here we go!</p>
+<p>##Path<br><strong>work example by hand</strong></p>
+<p>First, i write down the example about <mark>array{2,7,11,15}</mark></p>
+<p><strong>write down what you did</strong></p>
+<p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
+<p><strong>find patterns</strong></p>
+<p>I need to class a method twoSum to find the number in array and input the location of two numbers in array.</p>
+<p><strong>check by hand</strong></p>
+<p>targetnumber is 9</p>
+<p>First circle 2 + 7/11/15</p>
+<p>second circle 7 + 11/15<br>…….<br>.</p>
+<p><strong>translate to code</strong></p>
+<p>class Solution {<br>    public int[] twoSum(int[] nums, int target) {</p>
+<pre><code>   for(int i = 0; i &lt; nums.length; i++){
+        for(int j = i; j &lt; nums.length;j++){
+            if(nums[i] + nums[j] == target){
+                return new int[] {i,j};
+            }
+        }
+    }
+    throw new IllegalArgumentException(&quot;no conlcusion&quot;);
 
-    </header>
+}
+</code></pre><p>}</p>
+<p><strong>run test case</strong></p>
+<p>【0，1】</p>
+<p><strong>debug failed test cases</strong></p>
+<p>there are many new knowledge for this method.</p>
+<p>First, return a array. <mark>return new int[] {i,j}</mark><br>Second, when abnormal appears like in twoSum class return depend on if choose sentence, we should <mark>throw new IllegalArgumentException”no conclusion”</mark></p>
+<p>##conclusion</p>
+<p>After this we got return an array and operate abnormal.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/11/Two-Sum/" data-id="cjuch36760002zn2z08skcmkv" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/09/bubble-sort/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">bubble sort</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

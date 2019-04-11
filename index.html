@@ -62,6 +62,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Two-Sum" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/11/Two-Sum/" class="article-date">
+  <time datetime="2019-04-11T09:45:48.000Z" itemprop="datePublished">2019-04-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Hello, this is Guozhen Yang’s blog.<br>I will write down and share some opinion about my algorithm with you.<br>Here we go!</p>
+<p>##Path<br><strong>work example by hand</strong></p>
+<p>First, i write down the example about <mark>array{2,7,11,15}</mark></p>
+<p><strong>write down what you did</strong></p>
+<p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
+<p><strong>find patterns</strong></p>
+<p>I need to class a method twoSum to find the number in array and input the location of two numbers in array.</p>
+<p><strong>check by hand</strong></p>
+<p>targetnumber is 9</p>
+<p>First circle 2 + 7/11/15</p>
+<p>second circle 7 + 11/15<br>…….<br>.</p>
+<p><strong>translate to code</strong></p>
+<p>class Solution {<br>    public int[] twoSum(int[] nums, int target) {</p>
+<pre><code>   for(int i = 0; i &lt; nums.length; i++){
+        for(int j = i; j &lt; nums.length;j++){
+            if(nums[i] + nums[j] == target){
+                return new int[] {i,j};
+            }
+        }
+    }
+    throw new IllegalArgumentException(&quot;no conlcusion&quot;);
+
+}
+</code></pre><p>}</p>
+<p><strong>run test case</strong></p>
+<p>【0，1】</p>
+<p><strong>debug failed test cases</strong></p>
+<p>there are many new knowledge for this method.</p>
+<p>First, return a array. <mark>return new int[] {i,j}</mark><br>Second, when abnormal appears like in twoSum class return depend on if choose sentence, we should <mark>throw new IllegalArgumentException”no conclusion”</mark></p>
+<p>##conclusion</p>
+<p>After this we got return an array and operate abnormal.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/11/Two-Sum/" data-id="cjuch36760002zn2z08skcmkv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-bubble-sort" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/09/bubble-sort/" class="article-date">
@@ -128,7 +185,7 @@ public static void main(String[] args) {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjuapzyoz00000l2z8ktw43rt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjuch366s0000zn2z3rhshdz3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +221,7 @@ public static void main(String[] args) {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/28/test-my-life/" data-id="cjuapzyp700020l2zzj6yo235" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/28/test-my-life/" data-id="cjuch36770003zn2zw8bwx2m6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -209,7 +266,7 @@ public static void main(String[] args) {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/28/hello-world/" data-id="cjuapzyp500010l2z5zndpwp5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/28/hello-world/" data-id="cjuch36730001zn2zuuhdp2b5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -247,6 +304,10 @@ public static void main(String[] args) {
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/04/11/Two-Sum/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/04/09/bubble-sort/">bubble sort</a>
