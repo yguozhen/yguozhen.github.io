@@ -5,13 +5,20 @@
   
   <title>Guozhen&#39;s technological blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Guozhen&#39;s technological blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/05/22/jbdc.properties/index.html">
 <meta property="og:site_name" content="Guozhen&#39;s technological blog">
+<meta property="og:description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://yguozhen.github.io/picture/2019.5.22_1.png">
+<meta property="og:image" content="https://yguozhen.github.io/picture/2019.5.22_2.png">
+<meta property="og:updated_time" content="2019-05-22T14:33:13.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Guozhen&#39;s technological blog">
+<meta name="twitter:description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
+<meta name="twitter:image" content="https://yguozhen.github.io/picture/2019.5.22_1.png">
   
     <link rel="alternate" href="/atom.xml" title="Guozhen&#39;s technological blog" type="application/atom+xml">
   
@@ -60,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-jbdc.properties" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-jbdc.properties" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/22/jbdc.properties/" class="article-date">
   <time datetime="2019-05-22T14:33:13.670Z" itemprop="datePublished">2019-05-22</time>
@@ -98,155 +103,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Two-Sum" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/11/Two-Sum/" class="article-date">
-  <time datetime="2019-04-11T09:45:48.000Z" itemprop="datePublished">2019-04-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/11/Two-Sum/">Two Sum</a>
-    </h1>
+    <a href="/2019/04/11/Two-Sum/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Two Sum</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Two Sum</p>
-<p>Amazon top 100 questions(1/100)</p>
-<p>Hello, this is Guozhen Yang’s blog.<br>I will write down and share some opinion about my algorithm with you.<br>Here we go!</p>
-<p>##Path<br><strong>work example by hand</strong></p>
-<p>First, i write down the example about <mark>array{2,7,11,15}</mark></p>
-<p><strong>write down what you did</strong></p>
-<p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
-<p><strong>find patterns</strong></p>
-<p>I need to class a method twoSum to find the number in array and input the location of two numbers in array.</p>
-<p><strong>check by hand</strong></p>
-<p>targetnumber is 9</p>
-<p>First circle 2 + 7/11/15</p>
-<p>second circle 7 + 11/15<br>…….<br>.</p>
-<p><strong>translate to code</strong></p>
-<p>class Solution {<br>    public int[] twoSum(int[] nums, int target) {</p>
-<pre><code>   for(int i = 0; i &lt; nums.length; i++){
-        for(int j = i; j &lt; nums.length;j++){
-            if(nums[i] + nums[j] == target){
-                return new int[] {i,j};
-            }
-        }
-    }
-    throw new IllegalArgumentException(&quot;no conlcusion&quot;);
-
-}
-</code></pre><p>}</p>
-<p><strong>run test case</strong></p>
-<p>【0，1】</p>
-<p><strong>debug failed test cases</strong></p>
-<p>there are many new knowledge for this method.</p>
-<p>First, return a array. <mark>return new int[] {i,j}</mark><br>Second, when abnormal appears like in twoSum class return depend on if choose sentence, we should <mark>throw new IllegalArgumentException”no conclusion”</mark></p>
-<p>##conclusion</p>
-<p>After this we got return an array and operate abnormal.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/11/Two-Sum/" data-id="cjvzcc1dv0001x32zultaorji" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-bubble-sort" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/09/bubble-sort/" class="article-date">
-  <time datetime="2019-04-09T09:59:24.000Z" itemprop="datePublished">2019-04-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/09/bubble-sort/">bubble sort</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Bubble Sort</p>
-<p>Hello, this is Guozhen Yang’s blog.<br>I will write down and share some opinion about my algorithm with you.<br>Here we go!</p>
-<p>##Path<br><strong>work example by hand</strong></p>
-<p>First, i write down the example about <mark>array{4,21,0,-1,-2}</mark></p>
-<p><strong>write down what you did</strong></p>
-<p>and then i need put this array arrange from somall to large.</p>
-<p><strong>find patterns</strong></p>
-<p>Bubble sort is the pattern that from first number <mark>x = array[0] </mark>to calculate. If compared number <mark>array[1]</mark> is bigger than the <mark>x </mark>, then <mark>x = array[1] </mark>. The first circle is to find the biggest number and the second circle is to find the biggest number except for the biggest number you find before this circle.</p>
-<p><strong>check by hand</strong></p>
-<p>First circle array[] = {4,0,-1,-2,21}</p>
-<p>second array[] = {0,-1,-2,4,21}<br>…….<br>.</p>
-<p><strong>translate to code</strong></p>
-<pre><code>public class Demo4 {
-public static void main(String[] args) {
-    //circle number
-    int []arr= {4,21,0,-1,-2};
-    for(int i=0;i&lt;arr.length-1;i++) {
-        //comparative number
-        for(int j=0;j&lt;arr.length-i-1;j++) {
-
-            if(arr[j] &gt; arr[j+1]) {
-                int temp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = temp;
-            }
-
-
-        }
-    }
-    for(int k:arr){
-        System.out.print(k+&quot; &quot;);
-    }
-</code></pre><p>}</p>
-<p>}</p>
-<p><strong>run test case</strong></p>
-<p>-2 -1 0 4 21 </p>
-<p><strong>debug failed test cases</strong></p>
-<p>no bug.</p>
-<p>##conclusion</p>
-<p>Then if you extend the int array to another array. This code can do it too.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjvzcc1dy0002x32zw03lcoeo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
