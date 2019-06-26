@@ -62,6 +62,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JDBC" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/22/JDBC/" class="article-date">
+  <time datetime="2019-05-22T14:48:26.000Z" itemprop="datePublished">2019-05-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/22/JDBC/">JDBC</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#jdbc.properties</p>
+<p>##1 CHARACTER SET</p>
+<p>###1.1 QUESTION DESCRIPTION:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unknown initial character set index &apos;255&apos; received from </span><br><span class="line">server. Initial client character set can be forced via</span><br><span class="line"> the &apos;characterEncoding&apos; property</span><br></pre></td></tr></table></figure>
+<p>###1.2 REASON:<br>character set need to be utf-8</p>
+<p>###1.3 SOLUTION:<br>open <code>jdbc.properties</code></p>
+<p>then find the line<code>String url</code></p>
+<p>transform into<br><code>String url = &quot;jdbc:mysql://localhost:3306/ssm?useUnicode=true&amp;characterEncoding=utf8</code></p>
+<p>##2 NEW DEPLOYMENT</p>
+<p>###2.1 QUESTION DESCRIPTION:<br>new deployment but name is also the last one</p>
+<p>###2.2 REASON<br>The <code>test</code> project was copied by project<code>mybatics-spring-springmvc5</code>. So the <code>.setting</code> folder is also copied by <code>mybatics-spring-springmvc5</code>.</p>
+<p>###2.3  SOLUTION<br>then find we need change the <code>value</code> into <code>name that we wanted to</code> in <code>component</code> fold under <code>.setting</code>folder.</p>
+<p><img src="https://yguozhen.github.io/picture/2019.5.22_1.png" alt="input.action"></p>
+<p><img src="https://yguozhen.github.io/picture/2019.5.22_2.png" alt="save.action"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/22/JDBC/" data-id="cjvzcfepo0000xx2zsgng3ya0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Two-Sum" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/11/Two-Sum/" class="article-date">
@@ -121,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/11/Two-Sum/" data-id="cjuch82sq00010v2z1p9t90dt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/11/Two-Sum/" data-id="cjvzcfept0001xx2z21ekcu0z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -197,7 +247,7 @@ public static void main(String[] args) {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjuch82sl00000v2zawf6k6mi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjvzcfepw0002xx2zbsv4j2x1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +274,7 @@ public static void main(String[] args) {
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
     </div>
   </div>
 
@@ -235,6 +285,10 @@ public static void main(String[] args) {
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/05/22/JDBC/">JDBC</a>
+          </li>
         
           <li>
             <a href="/2019/04/11/Two-Sum/">Two Sum</a>

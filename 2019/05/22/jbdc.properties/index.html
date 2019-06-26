@@ -3,19 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>bubble sort | Guozhen&#39;s technological blog</title>
+  <title>Guozhen&#39;s technological blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Bubble Sort Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{">
+  <meta name="description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="bubble sort">
-<meta property="og:url" content="http://yoursite.com/2019/04/09/bubble-sort/index.html">
+<meta property="og:title" content="Guozhen&#39;s technological blog">
+<meta property="og:url" content="http://yoursite.com/2019/05/22/jbdc.properties/index.html">
 <meta property="og:site_name" content="Guozhen&#39;s technological blog">
-<meta property="og:description" content="#Bubble Sort Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{">
+<meta property="og:description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-10T04:26:50.575Z">
+<meta property="og:image" content="https://yguozhen.github.io/picture/2019.5.22_1.png">
+<meta property="og:image" content="https://yguozhen.github.io/picture/2019.5.22_2.png">
+<meta property="og:updated_time" content="2019-05-22T14:33:13.670Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="bubble sort">
-<meta name="twitter:description" content="#Bubble Sort Hello, this is Guozhen Yang’s blog.I will write down and share some opinion about my algorithm with you.Here we go! ##Pathwork example by hand First, i write down the example about array{">
+<meta name="twitter:title" content="Guozhen&#39;s technological blog">
+<meta name="twitter:description" content="#jdbc.properties ##1 CHARACTER SET ###1.1 QUESTION DESCRIPTION: 123Unknown initial character set index &amp;apos;255&amp;apos; received from server. Initial client character set can be forced via the &amp;apos;ch">
+<meta name="twitter:image" content="https://yguozhen.github.io/picture/2019.5.22_1.png">
   
     <link rel="alternate" href="/atom.xml" title="Guozhen&#39;s technological blog" type="application/atom+xml">
   
@@ -64,73 +67,37 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-bubble-sort" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-jbdc.properties" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/04/09/bubble-sort/" class="article-date">
-  <time datetime="2019-04-09T09:59:24.000Z" itemprop="datePublished">2019-04-09</time>
+    <a href="/2019/05/22/jbdc.properties/" class="article-date">
+  <time datetime="2019-05-22T14:33:13.670Z" itemprop="datePublished">2019-05-22</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      bubble sort
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Bubble Sort</p>
-<p>Hello, this is Guozhen Yang’s blog.<br>I will write down and share some opinion about my algorithm with you.<br>Here we go!</p>
-<p>##Path<br><strong>work example by hand</strong></p>
-<p>First, i write down the example about <mark>array{4,21,0,-1,-2}</mark></p>
-<p><strong>write down what you did</strong></p>
-<p>and then i need put this array arrange from somall to large.</p>
-<p><strong>find patterns</strong></p>
-<p>Bubble sort is the pattern that from first number <mark>x = array[0] </mark>to calculate. If compared number <mark>array[1]</mark> is bigger than the <mark>x </mark>, then <mark>x = array[1] </mark>. The first circle is to find the biggest number and the second circle is to find the biggest number except for the biggest number you find before this circle.</p>
-<p><strong>check by hand</strong></p>
-<p>First circle array[] = {4,0,-1,-2,21}</p>
-<p>second array[] = {0,-1,-2,4,21}<br>…….<br>.</p>
-<p><strong>translate to code</strong></p>
-<pre><code>public class Demo4 {
-public static void main(String[] args) {
-    //circle number
-    int []arr= {4,21,0,-1,-2};
-    for(int i=0;i&lt;arr.length-1;i++) {
-        //comparative number
-        for(int j=0;j&lt;arr.length-i-1;j++) {
-
-            if(arr[j] &gt; arr[j+1]) {
-                int temp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = temp;
-            }
-
-
-        }
-    }
-    for(int k:arr){
-        System.out.print(k+&quot; &quot;);
-    }
-</code></pre><p>}</p>
-<p>}</p>
-<p><strong>run test case</strong></p>
-<p>-2 -1 0 4 21 </p>
-<p><strong>debug failed test cases</strong></p>
-<p>no bug.</p>
-<p>##conclusion</p>
-<p>Then if you extend the int array to another array. This code can do it too.</p>
+        <p>#jdbc.properties</p>
+<p>##1 CHARACTER SET</p>
+<p>###1.1 QUESTION DESCRIPTION:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unknown initial character set index &apos;255&apos; received from </span><br><span class="line">server. Initial client character set can be forced via</span><br><span class="line"> the &apos;characterEncoding&apos; property</span><br></pre></td></tr></table></figure>
+<p>###1.2 REASON:<br>character set need to be utf-8</p>
+<p>###1.3 SOLUTION:<br>open <code>jdbc.properties</code></p>
+<p>then find the line<code>String url</code></p>
+<p>transform into<br><code>String url = &quot;jdbc:mysql://localhost:3306/ssm?useUnicode=true&amp;characterEncoding=utf8</code></p>
+<p>##2 NEW DEPLOYMENT</p>
+<p>###2.1 QUESTION DESCRIPTION:<br>new deployment but name is also the last one</p>
+<p>###2.2 REASON<br>The <code>test</code> project was copied by project<code>mybatics-spring-springmvc5</code>. So the <code>.setting</code> folder is also copied by <code>mybatics-spring-springmvc5</code>.</p>
+<p>###2.3  SOLUTION<br>then find we need change the <code>value</code> into <code>name that we wanted to</code> in <code>component</code> fold under <code>.setting</code>folder.</p>
+<p><img src="https://yguozhen.github.io/picture/2019.5.22_1.png" alt="input.action"></p>
+<p><img src="https://yguozhen.github.io/picture/2019.5.22_2.png" alt="save.action"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/bubble-sort/" data-id="cjvzcfepw0002xx2zbsv4j2x1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/22/jbdc.properties/" data-id="cjvzcc1dp0000x32zsphqioel" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,15 +106,11 @@ public static void main(String[] args) {
     
 <nav id="article-nav">
   
-    <a href="/2019/04/11/Two-Sum/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Two Sum
-        
-      </div>
-    </a>
   
+    <a href="/2019/04/11/Two-Sum/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Two Sum</div>
+    </a>
   
 </nav>
 
@@ -183,7 +146,7 @@ public static void main(String[] args) {
       <ul>
         
           <li>
-            <a href="/2019/05/22/JDBC/">JDBC</a>
+            <a href="/2019/05/22/jbdc.properties/">(no title)</a>
           </li>
         
           <li>
